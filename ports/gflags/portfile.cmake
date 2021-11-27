@@ -22,6 +22,8 @@ vcpkg_configure_cmake(
         -DBUILD_gflags_nothreads_LIB:BOOL=OFF
         -DGFLAGS_USE_TARGET_NAMESPACE:BOOL=ON
         -DCMAKE_DEBUG_POSTFIX=d
+        -DGFLAGS_BUILD_SHARED_LIBS=OFF
+        -DGFLAGS_BUILD_STATIC_LIBS=ON
 )
 
 vcpkg_install_cmake()

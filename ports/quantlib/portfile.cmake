@@ -18,6 +18,10 @@ vcpkg_configure_cmake(
         -DQL_BUILD_BENCHMARK=OFF
         -DQL_BUILD_EXAMPLES=OFF
         -DQL_BUILD_TEST_SUITE=OFF
+        -DQL_HIGH_RESOLUTION_DATE=ON
+        -DBUILD_SHARED_LIBS=OFF
+        -DBoost_USE_STATIC_LIBS=ON
+        -DBoost_USE_STATIC_RUNTIME=ON
 )
 
 vcpkg_install_cmake()
